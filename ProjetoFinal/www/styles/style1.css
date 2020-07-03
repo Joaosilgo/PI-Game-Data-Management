@@ -1,0 +1,250 @@
+
+
+nav {
+	background:rgb(109, 109, 109);
+	background: #55d6aa;
+	height:70px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.menu{
+	float:left;
+	margin: 0px 0 0;
+}
+#log{
+	float: right;
+	
+}
+
+.menu li{
+	display:inline-block;
+}
+
+.menu li a{
+  	display: block;
+	font-size: 0.82em;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	color: #FFF;
+	font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+	margin:50px auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#headerTitle{
+    width: 100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#formPerson{
+	display:none;
+	width: 90%;
+	margin:50px auto;
+}
+#formSession{
+	display:none;
+	width: 90%;
+	margin:50px auto;
+}
+
+label, input[type=text], input[type=date], select {
+	margin: 8px;
+}
+
+input{
+	margin:2px;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+header {
+    background: #55d6aa;
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background:#fff;
+	font-size: 16px;
+	margin:0;
+	
+	background-position: center;
+				
+				min-height: 50%;
+			
+				
+				 /* background-image:url('/images/Logos.svg'); */
+				 
+				background-color: #cccccc;
+				background-size: cover;
+				
+				
+}
+
+canvas{
+
+	margin-left: 350pt;
+	
+	margin-top: 100px
+	}
+	#snakeh1
+	{
+		text-align: center;
+	}
+
+
+
+	
+
+
+.table {
+   
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+.table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.table tbody td {
+    
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.table-highlight tbody tr:hover {
+    background-color: #CCE7E7; cursor: pointer;
+    
+}
+
+.table-horizontal tbody td {
+    border-left: none;
+    border-right: none;
+}
+.btn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.btn:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+#chartdiv {
+	width		: 100%;
+	height		: 500px;
+	font-size	: 11px;
+}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	

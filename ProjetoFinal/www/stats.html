@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <h1>STATS</h1>
+
+  <!--<div id="piechart"></div>-->
+
+  <!-- <canvas id="doughnut-chart" width="450" height="450"></canvas> -->
+
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+
+    new Chart(document.getElementById("doughnut-chart"), {
+      type: 'doughnut',
+      data: {
+        labels: ["WIN", "LOSES"],
+        datasets: [
+          {
+            label: "Population (millions)",
+            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+            data: [2478, 5267]
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: ' Global Ranking  '
+        }
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Load google charts
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work', 8],
+        ['Eat', 2],
+        ['TV', 4],
+        ['Gym', 2],
+        ['Sleep', 8]
+      ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = { 'title': 'My Average Day', 'width': 550, 'height': 400 };
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+      font-size: 11px;
+    }
+  </style>
+
+  <!-- Resources -->
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+  <!-- Chart code -->
+  <script>
+    var chart = AmCharts.makeChart("chartdiv", {
+      "type": "pie",
+      "theme": "light",
+      "dataProvider": [{
+        "title": "WIN",
+        "value": 1
+      }, {
+        "title": "LOSES",
+        "value": 2
+      }],
+      "titleField": "title",
+      "valueField": "value",
+      "labelRadius": 5,
+
+      "radius": "42%",
+      "innerRadius": "60%",
+      "labelText": "[[title]]",
+      "export": {
+        "enabled": true
+      }
+    });
+
+  </script>
+
+  <!-- HTML -->
+  <div id="chartdiv"></div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GAME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://d1yk18ot3qjyqd.cloudfront.net/skin/frontend/fredperry-rwd/default/favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style1.css" />
+    <script src="scripts/script1.js"></script>
+
+
+
+
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+
+  
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="menu">
+                <ul class="nav">
+                    <li>
+                        <a href="game.html" target="_blank">
+                            <img id="logo" src="images\Logos.SVG" alt="logo" width="40" height="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="menuHome" href="javascript: info.showHome();">HOME</a>
+                    </li>
+                    <li>
+                        <a id="menuPerson" href="javascript: info.showPerson();">PLAYERS</a>
+                    </li>
+                    <li>
+                        <a id="menuSession" href="javascript: info.showSession();">SESSION</a>
+                    </li>
+                    <li>
+                        <a id="menuStats" href="javascript: info.showStats();">STATS</a>
+                    </li>
+                   <!--  <li>
+                        <a id="navStatistics" onclick="statistics()" href="stats.html">Statistics</a>
+                    </li> -->
+                    <li>
+                        <a href="login.html">
+                            <img id="log" src="images/log.svg" alt="login" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <div id="chartdiv"></div> -->
+    <br />
+    <h3 id="headerTitle">Home</h3>
+
+    <div id="divInformation"></div>
+    	
+    <form id="formPerson" action="javascript: info.processingPerson('create');">
+        <input id="id" type="hidden" />
+        <label for="name">Name:</label>&nbsp;
+        <input id="name" type="text" placeholder="Introduza o nome">
+        <br/>
+        <label for="date">Birth Date:</label>&nbsp;
+        <input id="date" type="date" />
+        <br/>
+        <label for="countries">Country:</label>&nbsp;
+        <select id="countries"></select>
+        <br/>
+        <label for="timeSpan">timeSpan:</label>&nbsp;
+        <input id="timeSpan" type="text" />
+        <br/>
+        <br/>
+        <br/>
+        <input id="Save" type="submit" value="Save" />
+        <input id="clean" type="reset" value="clean" />
+    </form>
+
+
+
+
+    <form id="formSession" action="javascript: info.processingSession('create');">
+        <input id="idSession" type="hidden" />
+        <label for="descriptionSession">Name:</label>&nbsp;
+        <input id="descriptionSession" type="text" placeholder="Introduza o nome">
+        <br/>
+        <label for="assignationSession"> Date:</label>&nbsp;
+        <input id="assignationSession" type="date" />
+        <br/>
+        <label for="countrySession">Country:</label>&nbsp;
+        <select id="countriesSession"></select>
+        <br/>
+        <label for="timeSpanSession">timeSpan:</label>&nbsp;
+        <input id="timeSpanSession" type="text" />
+        <br/>
+        <br/>
+        <br/>
+        <input id="SaveSession" type="submit" value="Save" />
+        <input id="cleanSession" type="reset" value="clean" />
+    </form>
+
+    
+ 
+   
+
+    <script type="text/javascript">
+  
+      new Chart(document.getElementById("doughnut-chart"), {
+        type: 'doughnut',
+        data: {
+          labels: ["WIN", "LOSES"],
+          datasets: [
+            {
+              label: "Population (millions)",
+              backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+              data: [2478, 5267]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: ' Global Ranking  '
+          }
+        }
+      });
+  
+    </script>  
+
+</body>
+
+</html>

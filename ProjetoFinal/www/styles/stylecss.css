@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    background: lightgrey;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+a {
+    color: darkslategrey;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.home {
+    display: none;
+}
+
+.players {
+    display: none;
+}
+
+.gameSession {
+    display: none;
+}
+
+.statistics {
+    display: none;
+}
+
+
+
+
+
+
+/* BUTTON */
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 1px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button:hover {
+    background-color: #e7e7e7;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.24), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */
+
+.formAdd h2, .formEdit h2 {
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+
+.formAddSession h2 {
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+
+
+/* Modal Content/Box */
+
+
+
+.formAdd-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+.formAdd input[type="text"] ,.formAddSession input[type="text"],.formEdit input[type="text"],
+.formAdd input[type="date"] ,.formAddSession input[type="date"],.formEdit input[type="date"],
+.formAdd input[type="datetime"] ,.formAddSession input[type="datetime"],.formEdit input[type="datetime"],
+.formAdd input[type="email"] ,.formAddSession input[type="email"],.formEdit input[type="email"],
+.formAdd input[type="number"] ,.formAddSession input[type="number"],.formEdit input[type="number"],
+.formAdd input[type="search"] ,.formAddSession input[type="search"],.formEdit input[type="search"],
+.formAdd input[type="time"] ,.formAddSession input[type="time"],.formEdit input[type="time"],
+.formAdd input[type="url"] ,.formAddSession input[type="url"],.formEdit input[type="url"],
+.formAdd input[type="password"] ,.formAddSession input[type="password"],.formEdit input[type="password"],
+.formAdd textarea ,.formAddSession textarea,.formEdit textarea
+
+.formAdd select,.formAddSession select, .formEdit select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+
+
+
+.formAdd input[type="button"] ,.formAddSession input[type="button"], .formEdit input[type="button"],
+.formAdd input[type="submit"] ,.formAddSession input[type="submit"], .formEdit input[type="submit"],
+.formAdd input[type="reset"] ,.formAddSession input[type="reset"], .formEdit input[type="reset"], {
+    -moz-box-shadow: inset 0px 1px 0px 0px #888;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #888;
+    box-shadow: inset 0px 1px 0px 0px #888;
+    background-color: #333;
+    border: 1px solid #797979;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.formAdd input[type="button"]:hover ,.formAddSession input[type="button"]:hover, .formEdit input[type="button"],
+.formAdd input[type="submit"]:hover,  .formAddSession input[type="submit"]:hover, .formEdit input[type="submit"],
+.formAdd input[type="reset"]:hover,  .formAddSession input[type="reset"]:hover, .formEdit input[type="reset"] {
+    background: linear-gradient(to bottom, #4D4D4D 5%, #797979 100%);
+    background-color: #333;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 350px;
+    top: 300px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #888;
+    cursor: pointer;
+}
+
+.formAdd ,.formEdit {
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    display: "none";
+    
+
+}
+
+
+
+
+
+/*form add session*/
+
+    .formAddSession, .formEdit 
+        {
+            font-family: 'Open Sans Condensed', arial, sans;
+            width: 500px;
+            padding: 30px;
+            background: #FFFFFF;
+            margin: 50px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            display: "none";
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+.table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.table-highlight tbody tr:hover {
+    background-color: #CCE7E7; cursor: pointer;
+    
+}
+
+.table-horizontal tbody td {
+    border-left: none;
+    border-right: none;
+}
+
+
