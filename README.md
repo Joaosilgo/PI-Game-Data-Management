@@ -3,7 +3,6 @@
 
 1- Download the Project
 
-> using MySQL Workbench 
 
 
 
